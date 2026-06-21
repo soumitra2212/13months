@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>13 Months of Us ❤️</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- Music Player Toggle -->
+  <button id="music-toggle" aria-label="Toggle music">🎵</button>
+  <audio id="bg-music" loop preload="auto">
+    <source src="assets/music.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- Hearts Hunt Counter -->
+  <div id="hearts-counter">
+    <span>Hearts found:</span>
+    <span class="count"><span id="hearts-found">0</span>/13</span>
+  </div>
+
+  <!-- Background Particle Canvas -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- SECTION 0: Envelope Opening -->
+  <div id="envelope-overlay">
+    <h1 class="envelope-text">A letter for the girl who changed my world ❤️</h1>
+    <div class="envelope-container" id="envelope">
+      <div class="envelope-body">
+        <div class="envelope-flap"></div>
+        <div class="envelope-letter"></div>
+        <div class="envelope-heart">❤️</div>
+      </div>
+    </div>
+    <div class="envelope-click-text">Click to open</div>
+  </div>
+
+  <!-- MAIN CONTENT (Hidden initially) -->
+  <div id="main-content">
+
+
+
+
+
+    <!-- SECTION 3: 13 Reasons I Love You -->
+    <section id="reasons">
+      <h2 class="section-title">13 Reasons Why</h2>
+      <p class="section-subtitle">A small glimpse into why I love you...</p>
+
+      <div class="reasons-grid" id="reasons-grid">
+        <!-- Reason cards injected via JS -->
+      </div>
+    </section>
+
+    <!-- SECTION 4: Love Meter -->
+    <section id="lovemeter">
+      <h2 class="section-title">Love Meter</h2>
+      <p class="section-subtitle">Let's calculate how much I love you...</p>
+
+      <div class="love-meter-container glass-card">
+        <div class="meter-display">
+          <div class="meter-fill" id="meter-fill"></div>
+          <div class="meter-value"><span id="meter-text">0</span>%</div>
+          <div class="meter-label">Love Level</div>
+        </div>
+        <button class="meter-button" id="measure-love-btn">Measure Love</button>
+        <div class="meter-error" id="meter-error-msg">Error: Love exceeds measurable limits ❤️</div>
+      </div>
+    </section>
+
+
+
+    <!-- SECTION 6: 13 Months Counter -->
+    <section id="counter">
+      <h2 class="section-title">Since May 22, 2025</h2>
+      <p class="section-subtitle">Every second with you has been my favorite.</p>
+
+      <div class="counter-grid">
+        <div class="counter-box glass-card">
+          <span class="counter-value" id="count-months">0</span>
+          <span class="counter-label">Months</span>
+        </div>
+        <div class="counter-box glass-card">
+          <span class="counter-value" id="count-days">0</span>
+          <span class="counter-label">Days</span>
+        </div>
+        <div class="counter-box glass-card">
+          <span class="counter-value" id="count-hours">0</span>
+          <span class="counter-label">Hours</span>
+        </div>
+        <div class="counter-box glass-card">
+          <span class="counter-value" id="count-minutes">0</span>
+          <span class="counter-label">Minutes</span>
+        </div>
+        <div class="counter-box glass-card">
+          <span class="counter-value" id="count-seconds">0</span>
+          <span class="counter-label">Seconds</span>
+        </div>
+      </div>
+      <p class="counter-message">...and counting ❤️</p>
+    </section>
+
+    <!-- SECTION 7: Hidden Hearts Success Modal -->
+    <div id="hearts-success-modal">
+      <div class="hearts-success-content glass-card">
+        <div class="hearts-success-emoji">💖</div>
+        <h2 class="hearts-success-title">You found every piece of my heart!</h2>
+        <p class="hearts-success-message">You noticed all the little things, just like you always do.</p>
+        <img class="hearts-success-photo" src="assets/images/celebration.png" alt="Celebration">
+        <p class="hearts-success-note">You are my greatest reward.</p>
+        <button class="hearts-success-close" id="close-hearts-modal">Keep Exploring</button>
+      </div>
+    </div>
+
+
+
+    <!-- SECTION 9: Cinematic Finale -->
+    <section id="finale">
+      <div class="finale-container" id="finale-container">
+        <!-- Finale sequence lines injected via JS -->
+      </div>
+    </section>
+
+    <!-- Letter Modal -->
+    <div id="letter-modal">
+      <div class="letter-content">
+        <button class="letter-close" id="letter-close">✕</button>
+        <div class="letter-header">
+          <h2>My Dearest Bhuvi,</h2>
+          <span class="letter-date">Happy 13 Months</span>
+        </div>
+        <div class="letter-body">
+          <p>If someone told me back when we first met at tuition that you would become the most important person in my
+            life, I wouldn't have believed them. Not because you weren't incredible, but because I couldn't imagine
+            getting that lucky.</p>
+          <p>These past 13 months have been the best of my life. From those silent calls to those nonstop yapping till
+            late nights on call every moment with you feels incredible.</p>
+          <p>You understand me in ways no one else does. You make me laugh harder than anyone, and you make me want to
+            be a better person every single day.</p>
+          <p>Thank you for choosing me. Thank you for your patience, your warmth, and your endless love. I promise to
+            always cherish you, to hold your hand through everything, and to keep looking at you the exact same way I
+            did when I first fell for you.</p>
+          <p>Here's to 13 months down, and a lifetime to go. I love you, completely and always.</p>
+        </div>
+        <div class="letter-signature">
+          Yours,<br>Soumitra ❤️
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
